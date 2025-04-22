@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h1>About Me</h1>
+      <p>Hello, I'm <strong>Ghizlane ENNAH</strong>, a Data Analyst with a Master's degree in Business Intelligence and Big Data Analytics. I specialize in data analysis, visualization, and machine learning, with hands-on experience through internships, academic projects, and the ALX Data Analytics Program.</p>
+      <p>I’ve contributed to the development of an intrusion detection system using the UNSW-NB15 dataset and implemented AI-based product recommendation systems. My technical toolkit includes Python, SQL, Power BI, Scikit-learn, and TensorFlow.</p>
+      <p>I am passionate about solving real-world problems with data, automating processes, and delivering insights through dashboards and data storytelling. Fluent in Arabic, French, and English, I'm based in Casablanca, Morocco.</p>
+
+      <a href="{% static 'docs/CV_DataAnalyst_ENNAH_Ghizlane.pdf' %}" class="btn-download" download>Download CV</a>
+    </div>
+
+    <div class="about-image">
+      <img src="{% static 'img/logo.png' %}" alt="Ghizlane ENNAH">
+    </div>
+  </div>
+</section>
+
+<section class="details-section">
+  <div class="details-grid">
+
+    <div class="details-box">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>Master’s in Business Intelligence & Big Data Analytics</strong><br>2022 – 2024</li>
+        <li><strong>Bachelor’s in Computer Science</strong> – FP Safi<br>2020 – 2022</li>
+        <li><strong>DUT in Computer Engineering</strong> – EST Safi<br>2018 – 2020</li>
+      </ul>
+    </div>
+
+    <div class="details-box">
+      <h2>🛠️ Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Python (Pandas, NumPy, Scikit-learn, TensorFlow)</li>
+        <li>SQL, PL/SQL</li>
+        <li>Data Visualization: Power BI, Excel</li>
+        <li>Machine Learning & Deep Learning</li>
+        <li>Web Scraping, Git/GitHub</li>
+        <li>EDA & Data Preprocessing</li>
+      </ul>
+    </div>
+
+    <div class="details-box">
+      <h2>💼 Experience</h2>
+      <ul>
+        <li><strong>Data Analyst Intern – Tisalabs & Yosobox</strong><br>
+          <em>May 2024 – Nov 2024</em><br>
+          - Developed the TISA intrusion detection system using the UNSW-NB15 dataset.<br>
+          - Performed EDA to detect anomalies and improve model performance.<br>
+          - Built and optimized ML models for real-time threat classification.<br>
+          - Automated preprocessing tasks using Python.
+        </li>
+        <li><strong>Web Developer Intern – EST Safi</strong><br>
+          <em>Jul 2019 – Aug 2019</em><br>
+          - Created a website for Act4Community to improve online visibility.
+        </li>
+        <li><strong>Network Intern – EST Safi</strong><br>
+          <em>May 2020 – Jun 2020</em><br>
+          - Studied and implemented a communication network for an enterprise.
+        </li>
+      </ul>
+    </div>
+
+    <div class="details-box">
+      <h2>📜 Certifications</h2>
+      <ul class="certification-list">
+        <li>
+          <strong>ALX Data Analytics Program</strong> – ALX Africa  
+          <a href="https://intranet.alxswe.com/certificates/pNfMxC2hH8" target="_blank" class="view-cert">View Certificate</a>
+        </li>
+        <li>
+          <strong>Neural Networks and Deep Learning</strong> – Coursera  
+          <a href="https://www.coursera.org/account/accomplishments/verify/8X4GFSMB3BGC" target="_blank" class="view-cert">View Certificate</a>
+        </li>
+      </ul>
+      
+      
+    </div>
+
+    <div class="details-box">
+      <h2>📂 Academic Projects</h2>
+      <ul>
+        <li><strong>Intrusion Detection System</strong> – Python, UNSW-NB15, ML Models</li>
+        <li><strong>Product Recommendation System</strong> – Python, Scikit-learn, Clustering & Collaborative Filtering</li>
+        <li><strong>Maji Ndogo (ALX Project)</strong> – Excel, SQL, Power BI</li>
+      </ul>
+    </div>
+
+    <div class="details-box">
+      <h2>🌐 Languages</h2>
+      <ul>
+        <li>Arabic – Native</li>
+        <li>French – Fluent</li>
+        <li>English – Fluent</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

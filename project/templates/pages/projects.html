@@ -1,0 +1,140 @@
+
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+
+  <section class="projects-section">
+
+    <h1>My Projects</h1>
+    <p>Explore a collection of projects that I have worked on, including data analysis, machine learning, and interactive data visualization using tools like Tableau, Power BI, SQL and Python.</p>
+
+    <!-- Python Projects -->
+    <div class="category-section">
+      <h2>Python Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="{% static 'img/python_webscapping.jpg' %}" alt="Python Project 1">
+          <h3>Web Scraping Wikipedia – Largest U.S. Companies by Revenue</h3>
+          <p>A Python-based project that scrapes company revenue data from Wikipedia using BeautifulSoup and Requests. The extracted table is processed with Pandas and exported into a structured CSV format for further analysis.</p>
+          <a href="https://github.com/ghizlaneENNAH/Web-Scraping-Wikipedia-Largest-Companies-by-Revenue" target="_blank">View on GitHub</a>
+        </div>
+    
+        <div class="project-card">
+          <img src="{% static 'img/python_minip.jpg' %}" alt="Python Project 2">
+          <h3>Python Examples – Concepts & Mini Projects</h3>
+          <p>A curated collection of Python scripts showcasing essential programming concepts such as basic syntax, control flow, and web scraping using libraries like Requests and BeautifulSoup.</p>
+          <a href="https://github.com/ghizlaneENNAH/Python-Examples-Repository" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    
+    
+
+    <!-- SQL Projects -->
+    <div class="category-section">
+      <h2>SQL Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Cards for SQL -->
+        <div class="project-card">
+          <img src="{% static 'img/employee.jpg' %}" alt="SQL Project">
+          <h3>Employee Demographics SQL Project</h3>
+          <p>A hands-on SQL project covering database creation, data analysis, joins, aggregations, and advanced techniques like CTEs, window functions, and stored procedures — all centered around employee demographics data.</p>
+          <a href="https://github.com/ghizlaneENNAH/employee-demographics-sql" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <img src="{% static 'img/covid.jpg' %}" alt="SQL Project">
+          <h3>COVID-19 Data Exploration with SQL</h3>
+          <p>Explored global COVID-19 data using SQL to analyze infection trends, mortality rates, and vaccination progress. This project highlights skills in data cleaning, joins, CTEs, window functions, and creating views — offering valuable insights into the global impact of the pandemic.</p>
+          <a href="https://github.com/ghizlaneENNAH/SQL-COVID-19-Data-Exploration-" target="_blank">View on GitHub</a>
+        </div>
+
+
+        <div class="project-card">
+          <img src="{% static 'img/layoffs.png' %}" alt="Project 2">
+          <h3>Layoffs Data Cleaning with SQL</h3>
+          <p>Cleaned and preprocessed a real-world layoffs dataset using SQL by removing duplicates, standardizing industry and location names, handling null values, and converting data types. This project showcases essential data wrangling skills to prepare datasets for analysis and visualization.</p>
+          <a href="https://github.com/ghizlaneENNAH/Data-Cleaning-SQL-Project" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <img src="{% static 'img/data exploration.jpg' %}" alt="Project 2">
+          <h3>Data Cleaning and Layoff Analysis with SQL</h3>
+          <p>Performed full data cleaning and exploratory data analysis (EDA) on a layoffs dataset using SQL. Tasks included handling missing values, standardizing formats, and removing duplicates, followed by analyzing layoff trends across industries, companies, and countries using window and aggregate functions.</p>
+          <a href="https://github.com/ghizlaneENNAH/MySQL-Exploratory-Data-Analysis-_-Full-Project" target="_blank">View on GitHub</a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Tableau Projects -->
+    <div class="category-section">
+      <h2>Tableau Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Cards for Tableau -->
+        <div class="project-card">
+          <img src="{% static 'img/covid2.png' %}" alt="Project 1">
+          <h3>Global COVID-19 Statistics and Analysis</h3>
+          <p>An interactive Tableau dashboard exploring key global COVID-19 metrics such as death rates, infection percentages by population, and vaccination trends. This project integrates data from multiple sources to visualize the pandemic’s worldwide impact.</p>
+          <a href="https://github.com/ghizlaneENNAH/Tableau-Global-COVID-19-Statistics-and-Analysis" target="_blank">View on GitHub</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Power BI Projects -->
+    <div class="category-section">
+      <h2>Power BI Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Cards for Power BI -->
+        <div class="project-card">
+          <img src="{% static 'img/survey.png' %}" alt="Project 1">
+          <h3>Power BI – Final Project: Data Professional Survey Analysis</h3>
+          <p>An interactive Power BI project analyzing a professional survey dataset. It includes data cleaning, transformation, and insightful visualizations covering salary trends, job roles, and work-life balance satisfaction.</p>
+          <a href="https://github.com/ghizlaneENNAH/Data-Professional-Survey-Breakdown---Power-BI-Project" target="_blank">View on GitHub</a>
+        </div>
+
+
+        <div class="project-card">
+          <img src="{% static 'img/powerbi.png' %}" alt="Project 2">
+          <h3>Power BI Projects Repository</h3>
+          <p>A comprehensive collection of Power BI projects showcasing key features such as data modeling, Power Query, DAX formulas, relationships, drill-downs, and custom visualizations. Each project includes datasets, .pbix files, and step-by-step guides to help you learn and apply Power BI skills effectively.</p>
+          <a href="https://github.com/ghizlaneENNAH/Power-BI-small-projects-for-learning" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Power BI Projects -->
+<div class="category-section">
+  <h2>Excel Projects</h2>
+  <div class="projects-grid">
+    <!-- Project Cards for Power BI -->
+    <div class="project-card">
+      <img src="{% static 'img/bike.png' %}" alt="Project 1">
+      <h3>Bike Buyers Data Cleaning and Dashboard Visualization in Excel</h3>
+      <p>This project demonstrates the complete workflow of cleaning, analyzing, and visualizing a bike buyers dataset using Excel. Key steps included standardizing values, creating pivot tables, and designing an interactive dashboard with slicers for marital status, region, and education. The final dashboard offers insights into bike purchases based on gender, age, income, and commute distance.</p>
+      <a href="https://github.com/ghizlaneENNAH/Data-Cleaning-and-Visualization-in-Excel-Full-project" target="_blank">View on GitHub</a>
+    </div>
+
+
+    <div class="project-card">
+      <img src="{% static 'img/excel_tuto.jpg' %}" alt="Project 2">
+      <h3>Excel Tutorials: Formulas, Functions, Pivot Tables & Visualizations</h3>
+      <p>This project repository showcases essential Excel skills through hands-on tutorials. It includes real-world examples of formulas (IF, IFS, COUNTIF, TEXT functions), XLOOKUP vs VLOOKUP, dynamic conditional formatting, pivot tables, and interactive charts. Each file is designed to help users strengthen their data analysis and Excel proficiency.</p>
+      <a href="https://github.com/ghizlaneENNAH/excel_tuto" target="_blank">View on GitHub</a>
+    </div>
+
+
+    <div class="project-card">
+      <img src="{% static 'img/layoffs2.png' %}" alt="Project 2">
+      <h3>Excel Data Cleaning: U.S. Presidents Dataset</h3>
+      <p>This project demonstrates step-by-step data cleaning techniques using Excel to prepare a presidential dataset for analysis. Key actions included removing duplicates, fixing inconsistent text fields, trimming extra spaces, reformatting date and salary columns, and deleting unnecessary columns. Functions like PROPER(), TRIM(), and Excel formatting tools were applied to ensure a clean, consistent, and analysis-ready dataset.</p>
+      <a href="https://github.com/ghizlaneENNAH/Data-Cleaning-Excel-Project" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</div>
+
+  </section>
+{% endblock %}

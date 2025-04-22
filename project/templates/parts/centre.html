@@ -1,0 +1,38 @@
+{% load static %}
+<section class="skills-section">
+    <h2>My Toolbox</h2>
+    <div class="skills-grid">
+      
+      <a href="{% url 'python' %}" class="skill-card">
+        <img src="{% static 'img/python.jpg' %}" alt="Python">
+        <h3>Python</h3>
+        <p>Exploratory data analysis, machine learning, automation scripts.</p>
+      </a>
+  
+      <a href="{% url 'sql' %}" class="skill-card">
+        <img src="{% static 'img/sql.png' %}" alt="SQL">
+        <h3>SQL</h3>
+        <p>Data extraction, complex queries, joins, and optimization.</p>
+      </a>
+  
+      <a href="{% url 'excel' %}" class="skill-card">
+        <img src="{% static 'img/excel.jpg' %}" alt="Excel">
+        <h3>Advanced Excel</h3>
+        <p>Dashboards, pivot tables, formulas, VBA automation.</p>
+      </a>
+  
+      <a href="{% url 'powerbi' %}" class="skill-card">
+        <img src="{% static 'img/powerbi.png' %}" alt="Power BI">
+        <h3>Power BI</h3>
+        <p>Interactive dashboards, DAX, real-time reports.</p>
+      </a>
+  
+      <a href="{% url 'tableau' %}" class="skill-card">
+        <img src="{% static 'img/tableau.png' %}" alt="Tableau">
+        <h3>Tableau</h3>
+        <p>Visual storytelling, trends analysis, KPI dashboards.</p>
+      </a>
+  
+    </div>
+  </section>
+  

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghizlane ENNAH - Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-awesome-kit.js" crossorigin="anonymous"></script> <!-- replace with your own fontawesome kit if needed -->
+</head>
+<body>
+
+  <!-- Top Social Bar -->
+  <div class="top-bar">
+    <a href="https://www.linkedin.com/in/ghizlane-ennah-816258283/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/ghizlaneENNAH" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="mailto:ghizlane.enneh@gmail.com"><i class="fas fa-envelope"></i> ghizlane.enneh@gmail.com</a>
+    <a href="tel:+212767291582"><i class="fas fa-phone"></i> +212 7 67 29 15 82</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="profile">
+        <img src="{% static 'img/logo.png' %}" alt="Ghizlane ENNAH" class="profile-pic" />
+        <div class="name-role">
+          <h1>Ghizlane ENNAH</h1>
+          <p>Data Analyst | Master's in Business Intelligence and Big Data Analytics | ALX Graduate</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="{% url 'index'%}">Home</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <li><a href="{% url 'projects'%}">Projects</a></li>
+          <li><a href="https://drive.google.com/file/d/1usZ4PTpJXh82QcVQ-eD4Q9BVLiXU0jYK/view?usp=sharing" target="_blank">CV</a></li>
+          <li><a href="{% url 'contact'%}">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+</body>
+</html>

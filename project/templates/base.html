@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/centre.css' %}">
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <!-- Extra Page-specific CSS -->
+    {% block extra_css %}{% endblock extra_css %}
+</head>
+{% include 'parts/navbar.html' %}
+
+<body>
+
+
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+    
+
+</body>
+{% include 'parts/footer.html' %}
+</html>

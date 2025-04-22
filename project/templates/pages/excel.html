@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/python.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<section class="projects-section">
+  
+    <h2>Advanced Excel Projects</h2>
+
+<p class="section-intro">Explore a collection of projects showcasing data analysis, visualization, and automation using Advanced Excel features like PivotTables, VLOOKUP, Power Query, and macros.</p>
+
+    <div class="container">
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="{% static 'img/bike.png' %}" alt="Project 1">
+        <h3>Bike Buyers Data Cleaning and Dashboard Visualization in Excel</h3>
+        <p>This project demonstrates the complete workflow of cleaning, analyzing, and visualizing a bike buyers dataset using Excel. Key steps included standardizing values, creating pivot tables, and designing an interactive dashboard with slicers for marital status, region, and education. The final dashboard offers insights into bike purchases based on gender, age, income, and commute distance.</p>
+        <a href="https://github.com/ghizlaneENNAH/Data-Cleaning-and-Visualization-in-Excel-Full-project" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'img/excel_tuto.jpg' %}" alt="Project 2">
+        <h3>Excel Tutorials: Formulas, Functions, Pivot Tables & Visualizations</h3>
+        <p>This project repository showcases essential Excel skills through hands-on tutorials. It includes real-world examples of formulas (IF, IFS, COUNTIF, TEXT functions), XLOOKUP vs VLOOKUP, dynamic conditional formatting, pivot tables, and interactive charts. Each file is designed to help users strengthen their data analysis and Excel proficiency.</p>
+        <a href="https://github.com/ghizlaneENNAH/excel_tuto" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'img/layoffs2.png' %}" alt="Project 2">
+        <h3>Excel Data Cleaning: U.S. Presidents Dataset</h3>
+        <p>This project demonstrates step-by-step data cleaning techniques using Excel to prepare a presidential dataset for analysis. Key actions included removing duplicates, fixing inconsistent text fields, trimming extra spaces, reformatting date and salary columns, and deleting unnecessary columns. Functions like PROPER(), TRIM(), and Excel formatting tools were applied to ensure a clean, consistent, and analysis-ready dataset.</p>
+        <a href="https://github.com/ghizlaneENNAH/Data-Cleaning-Excel-Project" target="_blank">View on GitHub</a>
+      </div>
+     
+        
+
+    </div>
+  </div>
+</section>
+{% endblock content %}

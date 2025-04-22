@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/python.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<section class="projects-section">
+  
+    <h2>SQL Projects</h2>
+
+<p class="section-intro">A selection of projects where I used SQL for data querying, analysis, and transforming datasets for business insights and reporting.</p>
+
+    <div class="container">
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="{% static 'img/employee.jpg' %}" alt="Project 1">
+        <h3>Employee Demographics SQL Project</h3>
+        <p>A hands-on SQL project covering database creation, data analysis, joins, aggregations, and advanced techniques like CTEs, window functions, and stored procedures — all centered around employee demographics data.</p>
+        <a href="https://github.com/ghizlaneENNAH/employee-demographics-sql" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'img/covid.jpg' %}" alt="Project 2">
+        <h3>COVID-19 Data Exploration with SQL</h3>
+        <p>Explored global COVID-19 data using SQL to analyze infection trends, mortality rates, and vaccination progress. This project highlights skills in data cleaning, joins, CTEs, window functions, and creating views — offering valuable insights into the global impact of the pandemic.</p>
+        <a href="https://github.com/ghizlaneENNAH/SQL-COVID-19-Data-Exploration-" target="_blank">View on GitHub</a>
+      </div>
+
+
+      <div class="project-card">
+        <img src="{% static 'img/layoffs.png' %}" alt="Project 2">
+        <h3>Layoffs Data Cleaning with SQL</h3>
+        <p>Cleaned and preprocessed a real-world layoffs dataset using SQL by removing duplicates, standardizing industry and location names, handling null values, and converting data types. This project showcases essential data wrangling skills to prepare datasets for analysis and visualization.</p>
+        <a href="https://github.com/ghizlaneENNAH/Data-Cleaning-SQL-Project" target="_blank">View on GitHub</a>
+      </div>
+     
+      <div class="project-card">
+        <img src="{% static 'img/data exploration.jpg' %}" alt="Project 2">
+        <h3>Data Cleaning and Layoff Analysis with SQL</h3>
+        <p>Performed full data cleaning and exploratory data analysis (EDA) on a layoffs dataset using SQL. Tasks included handling missing values, standardizing formats, and removing duplicates, followed by analyzing layoff trends across industries, companies, and countries using window and aggregate functions.</p>
+        <a href="https://github.com/ghizlaneENNAH/MySQL-Exploratory-Data-Analysis-_-Full-Project" target="_blank">View on GitHub</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock content %}

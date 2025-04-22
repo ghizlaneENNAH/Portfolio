@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/python.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<section class="projects-section">
+  
+    <h2>Power BI Projects</h2>
+
+<p class="section-intro">Explore interactive dashboards and reports I’ve created using Power BI to transform data into actionable insights and visual storytelling.</p>
+
+    <div class="container">
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="{% static 'img/survey.png' %}" alt="Project 1">
+        <h3>Power BI – Final Project: Data Professional Survey Analysis</h3>
+        <p>An interactive Power BI project analyzing a professional survey dataset. It includes data cleaning, transformation, and insightful visualizations covering salary trends, job roles, and work-life balance satisfaction.</p>
+        <a href="https://github.com/ghizlaneENNAH/Data-Professional-Survey-Breakdown---Power-BI-Project" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'img/powerbi.png' %}" alt="Project 2">
+        <h3>Power BI Projects Repository</h3>
+        <p>A comprehensive collection of Power BI projects showcasing key features such as data modeling, Power Query, DAX formulas, relationships, drill-downs, and custom visualizations. Each project includes datasets, .pbix files, and step-by-step guides to help you learn and apply Power BI skills effectively.</p>
+        <a href="https://github.com/ghizlaneENNAH/Power-BI-small-projects-for-learning" target="_blank">View on GitHub</a>
+      </div>
+
+     
+        
+
+    </div>
+  </div>
+</section>
+{% endblock content %}

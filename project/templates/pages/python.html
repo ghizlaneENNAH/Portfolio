@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/python.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<section class="projects-section">
+  
+    <h2>Python Projects</h2>
+    
+    <p class="section-intro">Here are some of the projects I've built using Python for data analysis, automation, and machine learning.</p>
+    <div class="container">
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="{% static 'img/python_webscapping.jpg' %}" alt="Web Scraping Wikipedia – U.S. Companies by Revenue">
+        <h3>Web Scraping Wikipedia – Largest U.S. Companies by Revenue</h3>
+        <p>A Python-based project that scrapes company revenue data from Wikipedia using BeautifulSoup and Requests. The extracted table is processed with Pandas and exported into a structured CSV format for further analysis.</p>
+        <a href="https://github.com/ghizlaneENNAH/Web-Scraping-Wikipedia-Largest-Companies-by-Revenue" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <img src="{% static 'img/python_minip.jpg' %}" alt="Project 2">
+        <h3>Python Examples – Concepts & Mini Projects</h3>
+        <p>A curated collection of Python scripts showcasing essential programming concepts such as basic syntax, control flow, and web scraping using libraries like Requests and BeautifulSoup.</p>
+        <a href="https://github.com/ghizlaneENNAH/Python-Examples-Repository" target="_blank">View on GitHub</a>
+      </div>
+
+     
+        
+
+    </div>
+  </div>
+</section>
+{% endblock content %}
